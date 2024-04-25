@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <title>OAKLICK</title>
+</head>
+<body>
+        <div class="header">
+        <div class="inner">
+        <div class="logo">
+            <img src="public/logo/logo.png"/>
+        </div>
+        <div class="headerItems">
+            <a href="index.html" class="headerItem">Главная</a>
+            <a href="about.html" class="headerItem">Информация</a>
+            <a href="nalich.html" class="headerItem">В наличии</a>
+            <a href="feedback.html" class="headerItem">Отзывы</a>
+        </div>
+        <div class="headerButtons">
+            
+            <div class="headerButton">
+                <a href="korz.html"><img src="public/logo/shop.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+
+ 
+        <main>
+            <div class="container">
+              <div class="reviews_container">
+                <div class="reviews_form_container">
+                  <h2 class="reviews_form_header"> <big>Оставьте свой отзыв</big></h2>
+                  <form action="#" id="form">
+                    <label for="input_name"> Введите имя </label>
+                    <input
+                      type="text"
+                      id="input_name"
+                      class="input_form"
+                      placeholder="Имя"
+                    />
+                    <label for="input_email">
+                      Введите адрес электронной почты
+                    </label>
+                    <input
+                      type="email"
+                      id="input_email"
+                      class="input_form"
+                      placeholder="example@mail.ru"
+                    />
+                    <label for="input_device"> Введите модель очков </label>
+                    <input
+                      type="text"
+                      id="input_device"
+                      class="input_form"
+                      placeholder="JAWBREAKER™"
+                    />
+                    <label for="">Поставьте вашу оценку</label>
+                    <div class="rating" id="rating">
+                      <input type="radio" id="star5" name="rating" value="5" />
+                      <label for="star5">&#9733;</label>
+                      <input type="radio" id="star4" name="rating" value="4" />
+                      <label for="star4">&#9733;</label>
+                      <input type="radio" id="star3" name="rating" value="3" />
+                      <label for="star3">&#9733;</label>
+                      <input type="radio" id="star2" name="rating" value="2" />
+                      <label for="star2">&#9733;</label>
+                      <input type="radio" id="star1" name="rating" value="1" />
+                      <label for="star1">&#9733;</label>
+                    </div>
+                    <label for="text_form"> Введите текст отзыва </label>
+                    <textarea id="text_form" cols="30" rows="10"></textarea>
+                    
+                    <button class="button_form">Отправить</button>
+                  </form>
+                </div>
+    
+                <div id="popup" class="popup hidden">
+                  <p class="popup_text">Ваш отзыв отправлен!</p>
+                </div>
+    
+                <div class="review_items">
+                  <h2 class="review_customers">Отзывы других покупателей</h2>
+                  <div class="review_item">
+                    <span class="review_item_name">Анатолий</span>
+                    <span class="review_item_date">18 июня 2023</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Модель:</span>
+                      <span class="model_name">Очки-Маска EVZERO™ BLADES</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Великолепные очки. Нет искажений изображения даже в боковых частях линзы. Отличная цветопередача. Защита от ультрафиолета и от механических повреждений, радуют ежедневно!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review_item">
+                    <span class="review_item_name">Евгений</span>
+                    <span class="review_item_date">28 мая 2023</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Модель:</span>
+                      <span class="model_name">Очки-Маска WIND JACKET® 2.0 HARMONY FADE COLLECTION</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Очки классные, сидят хорошо, видимость отличная! Не запотевают, на склоне в снежную погоду прекрасно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review_item">
+                    <span class="review_item_name">Максим</span>
+                    <span class="review_item_date">7 февраля 2023</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Модель:</span>
+                      <span class="model_name">Маска AIRBRAKE® XL SNOW GOGGLE</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Отличная недорогая (раньше была) маска для плохой погоды и шерегешских кустов самое то что нужно.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </main>
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="footer1">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>OAKLICK</h6>
+        <p class="text-justify">Oaklick — крупнейший в России интернет-магазин, который специализируется на розничной продаже высококачественных солнцезащитных очков и спортивных масок от ведущего мирового производителя Oakley. Наш магазин напрямую сотрудничает с официальными дистрибьюторами, которые занимаются поставками оптики из США.</p>
+      </div>
+
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Меню</h6>
+        <ul class="footer-links">
+          <li><a href="about.html">Информация</a></li>
+          <li><a href="nalich.html">В наличии</a></li>
+          <li><a href="feedback.html">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer1">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+     <a href="#">OAKLICK</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <script src="js/addFile.js"></script>
+</body>
+</html>
